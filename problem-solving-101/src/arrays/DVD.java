@@ -1,12 +1,16 @@
 /**
  * 
  */
+
 package arrays;
+
 
 /**
  * @author maury
  * A simple definition of DVD
  */
+//The actual code for creating an Array to hold DVD's.
+//DVD[] dvdCollection = new DVD[15];
 public class DVD {
 		public String name;
 		public int releaseYear;
