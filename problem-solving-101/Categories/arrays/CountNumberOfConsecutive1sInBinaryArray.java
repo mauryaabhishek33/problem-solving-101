@@ -13,17 +13,18 @@ public class CountNumberOfConsecutive1sInBinaryArray {
         // Hint: Initialise and declare a variable here to 
         // keep track of how many 1's you've seen in a row.
 		
-		int counter= 0;
+		int counter= 0,max_counter=0;
         for (int i = 0; i < nums.length; i++) {
             // Do something with element nums[i].
         	if(nums[i]==1)
         		counter++;
         	else
-        	{
+        	{	
+        		max_counter= Math.max(counter, max_counter);
         		counter=0;
         	}
         }
-		return counter;
+		return Math.max(counter, max_counter);
     }
 	/**
 	 * @param args
@@ -32,7 +33,7 @@ public class CountNumberOfConsecutive1sInBinaryArray {
 		// TODO Auto-generated method stub
 		CountNumberOfConsecutive1sInBinaryArray count = new CountNumberOfConsecutive1sInBinaryArray();
 		
-		int nums[]= {0,1,0,1,1,1,1,1,1,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1};
+		int nums[]= {0,1,0,1,1,1,1,1,1,0,1,0,0,0,0,0,1,1,1,1,0};
 		
 		System.out.println(count.findMaxConsecutiveOnes(nums));
 
