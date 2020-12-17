@@ -39,7 +39,7 @@ public class EvenOdd {
 	}
 	public static void main(String[] args) {
 		
-		System.out.println(combinationsHelper(2, 3));
+		System.out.println(combinationsHelper(1000, 3));
 		
 }
 }
