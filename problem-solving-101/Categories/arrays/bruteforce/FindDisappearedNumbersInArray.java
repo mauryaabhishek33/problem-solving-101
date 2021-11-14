@@ -1,7 +1,7 @@
 /**
  * 
  */
-package arrays;
+package arrays.bruteforce;
 
 import java.util.ArrayList;
 import java.util.List;

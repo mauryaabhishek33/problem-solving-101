@@ -1,7 +1,7 @@
 /**
  * 
  */
-package arrays;
+package arrays.bruteforce;
 
 /**
  * @author maury

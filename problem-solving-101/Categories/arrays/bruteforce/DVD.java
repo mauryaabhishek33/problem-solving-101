@@ -2,7 +2,7 @@
  * 
  */
 
-package arrays;
+package arrays.bruteforce;
 
 
 /**
