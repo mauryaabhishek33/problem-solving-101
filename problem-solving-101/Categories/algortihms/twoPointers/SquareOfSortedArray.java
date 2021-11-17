@@ -13,19 +13,22 @@ package algortihms.twoPointers;
  *         be able to do it
  */
 public class SquareOfSortedArray {
-	public int[] sortedSquares(int[] nums) {
-		int leftPointer = 0, rightPointer = nums.length - 1;
-		int res[] = new int[nums.length];
-		for (int i = nums.length - 1; i >= 0; i--) {
-			if ((nums[leftPointer] * nums[leftPointer]) < (nums[rightPointer]
-					* nums[rightPointer])) {
-				res[i] = nums[rightPointer] * nums[rightPointer];
-				rightPointer--;
-			} else {
-				res[i] = nums[leftPointer] * nums[leftPointer];
-				leftPointer++;
+	public static void rotate(int[] nums, int k) {
+		int temp = 0, n = nums.length - 1;
+		for (int j = 1; j <= k; j++) {
+			temp = nums[n];
+			for (int i = n; i > 0; i--) {
+				nums[i] = nums[i - 1];
 			}
+			nums[0] = temp;
+			j++;
+			System.out.println(nums);
 		}
-		return res;
+		System.out.println(nums);
+	}
+
+	public static void main(String[] args) {
+		int a[] = {1, 2, 3, 4, 5, 6, 7};
+		rotate(a, 3);
 	}
 }
