@@ -1,7 +1,7 @@
 /**
  * 
  */
-package algortihms.twoPointers;
+package algortihms.optimizedOrInternetSolution;
 
 /**
  * @author maury
